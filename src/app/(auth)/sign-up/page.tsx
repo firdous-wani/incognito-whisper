@@ -101,7 +101,7 @@ export default function SignUpForm() {
     <div className="flex justify-center items-center min-h-screen bg-gray-800">
       <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md">
         <div className="text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">
+          <h1 className="text-2xl font-extrabold tracking-tight xl:text-3xl mb-6">
             Join Incognito Whisper
           </h1>
           <p className="mb-4">Sign up to start your anonymous adventure</p>
@@ -144,7 +144,7 @@ export default function SignUpForm() {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <Input {...field} name="email" />
-                  <p className="text-muted text-gray-400 text-sm">
+                  <p className="text-muted text-slate-500 text-[12px]">
                     We will send you a verification code
                   </p>
                   <FormMessage />
