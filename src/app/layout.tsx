@@ -4,6 +4,7 @@ import "./globals.css";
 import AuthProvider from "../context/AuthProvider";
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <body className={inter.className}>
           {children}
           <Analytics />
+          <SpeedInsights />
           <Toaster />
         </body>
       </AuthProvider>
